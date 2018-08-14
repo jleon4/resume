@@ -29,7 +29,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none"> </span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/abe.jpg" alt="">
         </span>
@@ -52,7 +52,7 @@
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#interests">Projects</a>
         </ul>
       </div>
     </nav>
@@ -67,7 +67,7 @@
           <div class="subheading mb-5">259 Alumni Hall · Notre Dame, IN 46556 · (678) 517-3891 ·
             <a href="mailto:jleon4@nd.edu">jleon4@nd.edu</a>
           </div>
-          <p class="mb-5">I am currently an undergraduate student majoring in Computer Science at the University of Notre Dame. I was born in El Salvador and now reside in Marietta, Georgia. I will be graduating in May of 2019.</p>
+          <p class="mb-5">I am currently an undergraduate student majoring in Computer Science at the University of Notre Dame. I was born in El Salvador and now reside in Marietta, Georgia. I will be graduating in May of 2019. I enjoy staying active whenever I have some time outside of school. I also enjoy playing my guitar and learning to play new music. I enjoy keeping up with the latest and best tech as I've always been a big admirer of technology and hope to be the one making great strides for it in the future.</p>
           <ul class="list-inline list-social-icons mb-0">
             
             
@@ -158,7 +158,7 @@ university both socially and academically.  </p>
             <div class="resume-content mr-auto">
               <h3 class="mb-0">University of Notre Dame</h3>
               <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science </div>
+              <div>Computer Science and Engineering </div>
               <p>GPA: 3.03</p>
             </div>
             <div class="resume-date text-md-right">
@@ -198,6 +198,10 @@ university both socially and academically.  </p>
                 <li>ARM</li>
               <li>Scheme</li>
               <li>X86</li>
+            <li>HTML and CSS</li>
+                <li>SQL</li>
+                <li>jQuery</li>
+
 
             </ul>
             
@@ -219,9 +223,57 @@ university both socially and academically.  </p>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>I enjoy staying active whenever I have some time outside of school. I also enjoy playing my guitar and learning to play new music. I enjoy keeping up with the latest and best tech. I've always been a big admirer of technology and hope to be the one making great strides for it in the future. </p>
+          <h2 class="mb-5">Projects</h2>
+          <p>Throughout my years at Notre Dame, I've had the privilege to participate in many Engineering and Computer Science Projects, both in teams and individually. Here are a few of them: </p>
           
+            <ul>
+                <div class="subheading mb-3">Summer Research</div>
+
+                    <p>I worked under Professor Aaron Striegel to research whether we could use current technology in smartphones and wearables to accurately tell if a firearm has gone off. This could be used as an alternative to GSR (gunshot residue) or acoustic measures to see if a firearm has been shot. I learned to use Xcode and code in Swift in order to code and iOS and watchOS app for my iPhone and Apple Watch. This app would collect the data of the accelerometer and gyroscope of the devices, turn it into a csv file and have the ability to export this file. From here, I was able to manipulate this data using several python scripts. These scripts would plot the data received an allow me to isolate events from this data. Once we have the data from a desired event, we can use machine learning in order to see what gunfire looks like based on the acceleration in three dimensions. All data was recorded at 50hz. If you want more information on this project, please feel free to email me. </p>
+                    <img src="img/Xcode.jpg" alt="xcode" style="width:900px;height:600px;">
+                    <img src="img/Data.jpg" alt="xcode" style="width:900px;height:600px;">
+                    <p> </p>
+          
+
+                 <div class="subheading mb-3">File Monitoring Program</div>
+                     <p>As a team, we created a file monitoring application called rorschach, which scans a root directory for any changes to files underneath this folder and executes user-specified actions on the files based on pattern matching rules. We did this in C++ by using several data structures to keep track of the modification times, actions being performed on a file etc. Through this project, we were introduced to signals, environmental variables and to the structure of a file system. </p>
+               
+                <div class="subheading mb-3">Process Queue and Utilization of a Multiple Cores</div>
+                     <p>As a team, we built a multi-core process queue, whose purpose is to receive a series of jobs and then schedule them to run on multiple CPU cores as separate processes. This project introduced us to client server protocols and communications as well as the use of scheduling for jobs (FIFO, Round Robin, Multi-Level Feedback Queue). For this project, we decided to use unix domain sockets as they enable two way communication between our client and server. The entire client and server were coded in C++. Once it was all coded, we benchmarked each of the different scheduling policies to see which ones performed better with different types of tasks. This was one of the more code intensive project that I've been a part of.</p> 
+                    <img src="img/proj2.jpg" alt="xcode" style="width:600px;height:400px;">
+                    <p> </p>
+
+
+                <div class="subheading mb-3">Event Driven Pub/Sub Library to create Application</div>
+                     <p>In this group project, we created an event driven publish subscribe library later to be used in a real time messaging application. This was all created in C++. The first target was to create a library that utilizes POSIX threads and concurrent data structures to implement a client. The server was provided to us. After the API was done, we implemented a simple messaging app using this API. It consisted of a client subscribing to a TOPIC, which would be the groupchat name, and sending and recieving messages back and forth to other clients subscribed to this TOPIC. </p> 
+                    <img src="img/proj3.jpg" alt="xcode" style="width:600px;height:400px;">
+                    <p> </p>
+                
+                <div class="subheading mb-3">Implementation of Malloc and Free in C</div>
+                     <p>Built and implementation of the language C commands malloc and free, which allocate and free memory from the heap. To do this, we learned how memory management is handled by the OS. We learned about splitting and coalescing blcoks, implementation of heap management strategies including Next Fit, Best Fit and Worst Fit. Once these strategies had been implemented, we benchmarked the different startegies by creating different scripts in Python. We learned which strategies worked best for reusing free blocks, requiring the least amount of space, allowing for the most splits and so on. </p> 
+                    <img src="img/proj4.png" alt="xcode" style="width:600px;height:400px;">
+                    <p> </p>
+                
+                <div class="subheading mb-3">Memcached</div>
+                     <p>Coded a simplified implementation of memcached which is in-memory key-value store that is used for quick access to frequently used computations (cache). In teams of 3, we used a C++ thread library to create a cache that supports concurrent access. We learned about the possible threats of concurrency and how to get around them using solutions such as semaphores and locks. Further, we learned about Page Tables and how they work. We implemted four eviction policies including FIFO, Random, LRU, and Clock.  </p> 
+                    <img src="img/proj5.jpg" alt="xcode" style="width:600px;height:400px;">
+
+                    <p> </p>
+
+                <div class="subheading mb-3">3D Animation Projects in MAYA</div>
+
+                    <p>One of my biggest passions through my childhood has been content creation, more specifically video and 3d modeling. During my junior year, I got to mess around with 3D animations using the MAYA 2018 software. These were a few of my creations: </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lyqI-MeMGkw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p> 
+                    </p>
+                    <img src="img/cartoon_house.jpg" alt="xcode" style="width:600px;height:400px;">
+                    <p> </p>
+                
+                    <img src="img/drink.jpg" alt="xcode" style="width:600px;height:400px;">
+                    <p> </p>          
+
+
+            </ul>
         </div>
       </section>
 
