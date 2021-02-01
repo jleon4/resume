@@ -1,7 +1,7 @@
 # Abraham Leon Resume
 Built utilizing Bootstrap template. 
 
-For questions, please reach out to myself at the email listed within the site: https://www.github.io/resume/
+For questions, please reach out to myself at the email listed within the site: https://www.jleon4.github.io/resume/
 
 ## Copyright and License
 
